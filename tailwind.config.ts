@@ -61,13 +61,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // New Status Colors
+        status: {
+          available: {
+            DEFAULT: 'hsl(var(--status-available))',
+            foreground: 'hsl(var(--status-available-foreground))'
+          },
+          occupied: {
+            DEFAULT: 'hsl(var(--status-occupied))',
+            foreground: 'hsl(var(--status-occupied-foreground))'
+          },
+          pending: {
+            DEFAULT: 'hsl(var(--status-pending))',
+            foreground: 'hsl(var(--status-pending-foreground))'
+          }
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+      // New Font Family
+      fontFamily: {
+        sans: ['var(--font-sans)'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
